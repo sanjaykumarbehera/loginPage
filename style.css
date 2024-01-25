@@ -33,9 +33,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
-
+.form-box{
+    display: flex;
+}
+.LoginForm{
+    position: absolute;
+    transform: translateX(0px) 0deg;
+    transition: all .5s ease;
+    transition-delay: .4s;
+}
+.X-450{
+    transform: translateX(-450px) rotate(-45deg);
+    transition-delay: .3s;
+}
+.RegisterForm{
+    transform: translateX(450px) rotate(45deg);
+    transition: all .5s ease;
+    transition-delay: .3s;
+}
+.X0{
+    transform: translateX(0px) rotate(0deg);
+    transition-delay: .4s;
+}
 .container .form-box h2{
     text-align: center;
     font-size: 36px;
@@ -50,6 +72,7 @@ body{
     /* border:1px solid red ; */
     
 }
+
 .form-box .input-box input{
     background: transparent;
     border: none;
@@ -57,6 +80,7 @@ body{
     width: 100%;
     height: 40px;
     padding: 0 35px 0 5px;
+    font-size: 16px;
 }
 .form-box .input-box label{
     font-weight: 400;
@@ -122,4 +146,136 @@ body{
 }
 .account-creation a:hover{
     text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .container{
+        height: 500px;
+        width: 380px;
+        
+    }
+
+    .container .form-box h2{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .form-box .input-box input{
+        
+        font-size: 14px;
+    }
+
+    .form-box .input-box {
+        margin: 35px 0;
+        width: 300px;
+    }
+    .form-box .input-box label{
+        font-size: 14px;
+    }
+    .forget-section{
+        font-size: 14px;
+    }
+    .input-box i{
+        
+        font-size: 17px;
+    
+    }
+
+    .account-creation{
+        
+        font-size: 13px;
+    }
+    .btn{
+        height: 40px;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:480px){
+    .container{
+        height: 450px;
+        width: 310px;
+        
+    }
+
+    .container .form-box h2{
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .form-box .input-box {
+        margin: 30px 0;
+        width: 260px;
+    }
+    .form-box .input-box input{
+        
+        font-size: 12px;
+    }
+    .form-box .input-box label{
+        font-size: 12px;
+    }
+    .forget-section{
+        font-size: 12px;
+    }
+    .input-box i{
+        
+        font-size: 15px;
+    
+    }
+
+    .account-creation{
+        
+        font-size: 13px;
+    }
+    .btn{
+        height: 35px;
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:365px){
+    .container{
+        height: 400px;
+        width: 270px;
+        
+    }
+
+    .container .form-box h2{
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .form-box .input-box {
+        margin: 25px 0;
+        width: 220px;
+    }
+    .form-box .input-box input{
+        
+        font-size: 11px;
+    }
+    .form-box .input-box label{
+        font-size: 11px;
+    }
+    .forget-section{
+        font-size: 11px;
+    }
+    .input-box i{
+        
+        font-size: 13px;
+    
+    }
+
+    .account-creation{
+        
+        font-size: 12px;
+    }
+    .btn{
+        height: 30px;
+        width: 100%;
+        font-size: 12px;
+    }
 }
